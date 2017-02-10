@@ -57,7 +57,7 @@ public class ConsistentHash<T> {
         nodes.add("iaso-topic1");
         nodes.add("iaso-topic2");
         nodes.add("iaso-topic3");
-        ConsistentHash<String> consistentHash = new ConsistentHash<>(hashFunction, 3, nodes);
+        ConsistentHash<String> consistentHash = new ConsistentHash<>(hashFunction, 100, nodes);
 
         Map<String, Integer> result = new HashMap<>();
 
